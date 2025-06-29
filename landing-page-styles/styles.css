@@ -1,0 +1,15 @@
+.hero-image img {
+    width: 300px;
+}
+
+#photo-1 img, #photo-2 img, #photo-3 img {
+    width: 400px;
+}
+
+#program-1 img, #program-2 img, #program-3 img {
+    width: 400px;
+}
+
+#current-proj-1 video, #current-proj-2 img {
+    width: 400px;
+}
