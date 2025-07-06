@@ -1,15 +1,170 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #222;
+    padding: 0 1rem;
+}
+
+/* Typography */
+h1, h2, h3 {
+    color: #111;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin: 1rem 0 0.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+p {
+    max-width: 70ch;
+    margin-bottom: 1rem;
+}
+
+/* Header & Navigation */
+header {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Grid Layout */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+/* Hero Section */
+#hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 2rem;
+}
+
 .hero-image img {
-    width: 300px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
 }
 
-#photo-1 img, #photo-2 img, #photo-3 img {
-    width: 400px;
+/* Portfolio Sections */
+#proud-photos, #proud-programs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
-#program-1 img, #program-2 img, #program-3 img {
-    width: 400px;
+#proud-photos h1, #proud-programs h2 {
+    text-align: center;
 }
 
-#current-proj-1 video, #current-proj-2 img {
-    width: 400px;
+#proud-photos div,
+#proud-programs div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+#proud-photos div > div,
+#proud-programs div > div {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#proud-photos img, #proud-programs img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Current Projects */
+#current-projects {
+    display: grid;
+    gap: 1.5rem;
+}
+
+#current-projects div {
+    background-color: #fafafa;
+    padding: 1rem;
+    border-left: 4px solid #0077cc;
+    border-radius: 4px;
+}
+
+#current-projects video, 
+#current-projects img {
+    width: 100%;
+    margin-top: 0.5rem;
+    border-radius: 6px;
+}
+
+/* Motivation Section */
+#motivation {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+    margin-top: 2rem;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: #0077cc;
 }
