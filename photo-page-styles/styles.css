@@ -50,16 +50,14 @@ header.navbar {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white;;
-    color: white;
+    background-color: white;
     padding: 1rem 2rem;
-    box-sizing: border-box;
-    border-bottom: none; /* remove border to clean look */
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    text-align: left; /* since flex aligns content */
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 header.navbar h1 {
@@ -69,18 +67,8 @@ header.navbar h1 {
 
 nav {
     display: flex;
-    justify-content: center;
     gap: 1.5rem;
     list-style: none;
-    margin-top: 0.5rem;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 1.5rem;
 }
 
 nav li {
