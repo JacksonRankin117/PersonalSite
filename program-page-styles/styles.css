@@ -117,7 +117,8 @@ main {
 
 #hero-image {
     grid-column: 2 / 3;
-    align-self: start;
+    align-self: center;
+    
 }
 
 #hero-image img {
